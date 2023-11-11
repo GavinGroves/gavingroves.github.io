@@ -382,13 +382,16 @@
   </main>
 
   <footer>
-    <div>
+    
+
+<div class="footer-inner">
+<div>
   <span id="timeDate">载入天数...</span>
   <span id="times">载入时分秒...</span>
   <script>
   var now = new Date();
   function createtime(){
-      var grt= new Date("07/02/2020 00:00:00");//此处修改你的建站时间或者网站上线时间
+      var grt= new Date("10/24/2023 00:00:00");//此处修改你的建站时间或者网站上线时间
       now.setTime(now.getTime()+250);
       days = (now - grt ) / 1000 / 60 / 60 / 24;
       dnum = Math.floor(days);
@@ -413,13 +416,11 @@
   setInterval("createtime()",250);
   </script>
 </div>
-
-<div class="footer-inner">
-<div class="text-center py-1">   
+<div class=""center text-center py-1">   
   <div>
-    <span>Copyright © 2020</span></a>
+    <span>Copyright © 2023</span></a>
     <a href="https://erenspace.cool/" target="_blank" rel="nofollow noopener">
-     <span>Eren‘s Spaceship</span></a>    <br>
+     <span>Orion</span></a>    <br>
   </div>
 </div>
 </div>
