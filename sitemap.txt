@@ -1,6 +1,8 @@
+http://example.com/2023/11/10/UnityTip/
 http://example.com/tags/index.html
 http://example.com/categories/index.html
 http://example.com/about/index.html
-http://example.com/2023/11/10/UnityTip/
 http://example.com/2023/11/10/hello-world/
 http://example.com/
+http://example.com/tags/Unity/
+http://example.com/categories/Unity/
