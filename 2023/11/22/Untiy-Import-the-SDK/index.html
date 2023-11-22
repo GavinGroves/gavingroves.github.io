@@ -1,0 +1,728 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/QAIcon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Gavin Groves">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="Untiy ADS SDK 导入 2023一、Cloud.UnityAds后台管理中创建项目​	1.  创建项目，添加Ads模块    Enable Ads 启用广告 设置  这里使用原生UntiyAds     二、 在Unity 中下载sdk 导入项目 “Window”&gt;“Package Manager”  在“Packages”搜索“Advertisement Legacy”  Pro">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Untiy Import the SDK　">
+<meta property="og:url" content="http://gavingroves.github.io/2023/11/22/Untiy-Import-the-SDK/index.html">
+<meta property="og:site_name" content="Orion">
+<meta property="og:description" content="Untiy ADS SDK 导入 2023一、Cloud.UnityAds后台管理中创建项目​	1.  创建项目，添加Ads模块    Enable Ads 启用广告 设置  这里使用原生UntiyAds     二、 在Unity 中下载sdk 导入项目 “Window”&gt;“Package Manager”  在“Packages”搜索“Advertisement Legacy”  Pro">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://raw.githubusercontent.com/GavinGroves/Notes/main/img/image-20231122213045907.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/GavinGroves/Notes/main/img/image-20231122213420189.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/GavinGroves/Notes/main/img/image-20231122214203912.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/GavinGroves/Notes/main/img/image-20231122214554672.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/GavinGroves/Notes/main/img/image-20231122215241652.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/GavinGroves/Notes/main/img/image-20231122220131200.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/GavinGroves/Notes/main/img/image-20231123025822646.png">
+<meta property="article:published_time" content="2023-11-22T11:58:49.000Z">
+<meta property="article:modified_time" content="2023-11-22T18:59:38.635Z">
+<meta property="article:author" content="Gavin Groves">
+<meta property="article:tag" content="Unity">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/GavinGroves/Notes/main/img/image-20231122213045907.png">
+  
+  
+  
+  <title>Untiy Import the SDK　 - Orion</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"gavingroves.github.io","root":"/","version":"1.9.5-a","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"C#"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/atom.xml" title="Orion" type="application/atom+xml">
+</head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Orion</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives">
+                <i class="iconfont icon-books"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories">
+                <i class="iconfont icon-th-large"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Untiy Import the SDK　"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-11-22 19:58" pubdate>
+          November 22, 2023 pm
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          4.8k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          41 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">Untiy Import the SDK　</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="Untiy-ADS-SDK-导入-2023"><a href="#Untiy-ADS-SDK-导入-2023" class="headerlink" title="Untiy ADS SDK 导入 2023"></a>Untiy ADS SDK 导入 2023</h1><h2 id="一、Cloud-UnityAds后台管理中创建项目"><a href="#一、Cloud-UnityAds后台管理中创建项目" class="headerlink" title="一、Cloud.UnityAds后台管理中创建项目"></a>一、<a target="_blank" rel="noopener" href="https://cloud.unity.com/">Cloud.Unity</a>Ads后台管理中创建项目</h2><p>​	1.  创建项目，添加Ads模块</p>
+<p><img src="https://raw.githubusercontent.com/GavinGroves/Notes/main/img/image-20231122213045907.png" srcset="/img/loading.gif" lazyload alt="image-20231122213045907"></p>
+<p><img src="https://raw.githubusercontent.com/GavinGroves/Notes/main/img/image-20231122213420189.png" srcset="/img/loading.gif" lazyload alt="image-20231122213420189"></p>
+<ol start="2">
+<li><p>Enable Ads 启用广告 设置 </p>
+<p>这里使用原生UntiyAds</p>
+</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/GavinGroves/Notes/main/img/image-20231122214203912.png" srcset="/img/loading.gif" lazyload alt="image-20231122214203912"></p>
+<p><img src="https://raw.githubusercontent.com/GavinGroves/Notes/main/img/image-20231122214554672.png" srcset="/img/loading.gif" lazyload alt="image-20231122214554672"></p>
+<h2 id="二、-在Unity-中下载sdk-导入项目"><a href="#二、-在Unity-中下载sdk-导入项目" class="headerlink" title="二、 在Unity 中下载sdk 导入项目"></a>二、 在Unity 中下载sdk 导入项目</h2><p> “Window”&gt;“Package Manager” </p>
+<p>在“Packages”搜索“Advertisement Legacy”</p>
+<p><img src="https://raw.githubusercontent.com/GavinGroves/Notes/main/img/image-20231122215241652.png" srcset="/img/loading.gif" lazyload alt="image-20231122215241652"></p>
+<p>Project Setting中找到Services –&gt; Ads </p>
+<p><img src="https://raw.githubusercontent.com/GavinGroves/Notes/main/img/image-20231122220131200.png" srcset="/img/loading.gif" lazyload alt="image-20231122220131200"></p>
+<h2 id="三、配置-Unity-Ads-广告-SDK"><a href="#三、配置-Unity-Ads-广告-SDK" class="headerlink" title="三、配置 Unity Ads 广告 SDK"></a>三、配置 Unity Ads 广告 SDK</h2><p>1.初始化Ads </p>
+<p>2.文档 <a target="_blank" rel="noopener" href="https://docs.unity.com/ads/zh-cn/manual/InitializingTheUnitySDK#%E5%9C%A8_Unity_%E4%B8%AD%E5%88%9D%E5%A7%8B%E5%8C%96_SDK">在 Unity 中初始化 SDK</a></p>
+<p><img src="https://raw.githubusercontent.com/GavinGroves/Notes/main/img/image-20231123025822646.png" srcset="/img/loading.gif" lazyload alt="image-20231123025822646"></p>
+<p>源码：<a target="_blank" rel="noopener" href="https://github.com/GavinGroves/Unity-IntegratedProject">GavinGroves&#x2F;Unity-IntegratedProject: Unity Ads广告 SDK 导入（插屏、奖励、横幅） (github.com)</a></p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br></pre></td><td class="code"><pre><code class="hljs C#"><span class="hljs-keyword">using</span> UnityEngine.Advertisements;<br><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">AdsManager</span> : <span class="hljs-title">MonoBehaviour</span>, <span class="hljs-title">IUnityAdsInitializationListener</span>, <span class="hljs-title">IUnityAdsLoadListener</span>, <span class="hljs-title">IUnityAdsShowListener</span><br>&#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> AdsManager Instance;<br>    [<span class="hljs-meta">SerializeField</span>] <span class="hljs-built_in">bool</span> _testMode = <span class="hljs-literal">false</span>; <span class="hljs-comment">//开启测试模式，发布时FALSE</span><br>    [<span class="hljs-meta">SerializeField</span>] BannerPosition _bannerPosition = BannerPosition.BOTTOM_CENTER;<br>    <span class="hljs-keyword">private</span> <span class="hljs-built_in">bool</span> _adBannerLoaded = <span class="hljs-literal">false</span>;<br><br><span class="hljs-meta">#<span class="hljs-keyword">if</span> UNITY_ANDROID</span><br>    <span class="hljs-keyword">private</span> <span class="hljs-built_in">string</span> gameID = <span class="hljs-string">&quot;5482417&quot;</span>;<br>    <span class="hljs-keyword">private</span> <span class="hljs-built_in">string</span> interPlacementID = <span class="hljs-string">&quot;Interstitial_Android&quot;</span>;<br>    <span class="hljs-keyword">private</span> <span class="hljs-built_in">string</span> rewardPlacementID = <span class="hljs-string">&quot;Rewarded_Android&quot;</span>;<br>    <span class="hljs-keyword">private</span> <span class="hljs-built_in">string</span> BannerPlacementId = <span class="hljs-string">&quot;Banner_Android&quot;</span>;<br><span class="hljs-meta">#<span class="hljs-keyword">elif</span> UNITY_IOS</span><br>    <span class="hljs-keyword">private</span> <span class="hljs-built_in">string</span> gameID = <span class="hljs-string">&quot;5482416&quot;</span>;<br>    <span class="hljs-keyword">private</span> <span class="hljs-built_in">string</span> interPlacementID = <span class="hljs-string">&quot;Interstitial_iOS&quot;</span>;<br>    <span class="hljs-keyword">private</span> <span class="hljs-built_in">string</span> rewardPlacementID = <span class="hljs-string">&quot;Rewarded_iOS&quot;</span>;<br>    <span class="hljs-keyword">private</span> <span class="hljs-built_in">string</span> BannerPlacementId = <span class="hljs-string">&quot;Banner_iOS&quot;</span>;<br><span class="hljs-meta">#<span class="hljs-keyword">endif</span></span><br>    <br>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Awake</span>()</span><br>    &#123;<br>        <span class="hljs-keyword">if</span> (Instance == <span class="hljs-literal">null</span>)<br>        &#123;<br>            Instance = <span class="hljs-keyword">this</span>;<br>        &#125;<br>        <span class="hljs-keyword">else</span><br>        &#123;<br>            Destroy(gameObject);<br>        &#125;<br><br>        DontDestroyOnLoad(<span class="hljs-keyword">this</span>);<br><br>        Advertisement.Initialize(gameID, _testMode, <span class="hljs-keyword">this</span>);<br>        Advertisement.Banner.SetPosition(_bannerPosition);<br>    &#125;<br>    <br>    <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;summary&gt;</span></span><br>    <span class="hljs-comment"><span class="hljs-doctag">///</span> 调用显示插页广告</span><br>    <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/summary&gt;</span></span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">ShowInterAds</span>()</span><br>    &#123;<br>        Advertisement.Show(interPlacementID, <span class="hljs-keyword">this</span>);<br>    &#125;<br>    <br>    <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;summary&gt;</span></span><br>    <span class="hljs-comment"><span class="hljs-doctag">///</span> 调用显示奖励广告</span><br>    <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/summary&gt;</span></span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">ShowRewardAds</span>()</span><br>    &#123;<br>        Advertisement.Show(rewardPlacementID, <span class="hljs-keyword">this</span>);<br>    &#125;<br><br>    <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;summary&gt;</span></span><br>    <span class="hljs-comment"><span class="hljs-doctag">///</span> 调用显示横幅广告</span><br>    <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/summary&gt;</span></span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">ShowBannerAds</span>()</span><br>    &#123;<br>        <span class="hljs-keyword">if</span> (!_adBannerLoaded)<br>        &#123;<br>            LoadBanner();<br>        &#125;<br>        <span class="hljs-keyword">else</span><br>        &#123;<br>            BannerOptions options = <span class="hljs-keyword">new</span> BannerOptions<br>            &#123;<br>                clickCallback = OnBannerClicked,<br>                hideCallback = OnBannerHidden,<br>                showCallback = OnBannerShown<br>            &#125;;<br> <br>            <span class="hljs-comment">// Show the loaded Banner Ad Unit:</span><br>            Advertisement.Banner.Show(BannerPlacementId, options);<br>        &#125;<br>    &#125;<br>    <br>    <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;summary&gt;</span></span><br>    <span class="hljs-comment"><span class="hljs-doctag">///</span> 隐藏横幅广告Banner</span><br>    <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/summary&gt;</span></span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">HideBannerAd</span>()</span><br>    &#123;<br>        Advertisement.Banner.Hide();<br>    &#125;<br>    <br>    <span class="hljs-meta">#<span class="hljs-keyword">region</span> 初始化</span><br>    <br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">OnInitializationComplete</span>()</span><br>    &#123;<br>        Debug.Log(<span class="hljs-string">&quot;Unity Ads initialization complete. 广告初始化完成&quot;</span>);<br><br>        Advertisement.Load(interPlacementID, <span class="hljs-keyword">this</span>);<br>        Advertisement.Load(rewardPlacementID, <span class="hljs-keyword">this</span>);<br>        <span class="hljs-comment">// Advertisement.Load(BannerPlacementId, this);</span><br>        <br>        LoadBanner();<br>    &#125;<br><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">OnInitializationFailed</span>(<span class="hljs-params">UnityAdsInitializationError error, <span class="hljs-built_in">string</span> message</span>)</span><br>    &#123;<br>        Debug.Log(<span class="hljs-string">$&quot;广告初始化失败: <span class="hljs-subst">&#123;error.ToString()&#125;</span> - <span class="hljs-subst">&#123;message&#125;</span>&quot;</span>);<br>    &#125;<br>    <span class="hljs-meta">#<span class="hljs-keyword">endregion</span> </span><br>    <br>    <span class="hljs-meta">#<span class="hljs-keyword">region</span> 加载</span><br>    <br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">OnUnityAdsAdLoaded</span>(<span class="hljs-params"><span class="hljs-built_in">string</span> adUnitId</span>)</span><br>    &#123;<br>        <span class="hljs-comment">//（可选）如果广告单元成功加载内容，执行代码。</span><br>        Debug.Log(<span class="hljs-string">&quot;加载广告完成ID: &quot;</span> + adUnitId);<br>    &#125;<br><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">OnUnityAdsFailedToLoad</span>(<span class="hljs-params"><span class="hljs-built_in">string</span> _adUnitId, UnityAdsLoadError error, <span class="hljs-built_in">string</span> message</span>)</span><br>    &#123;<br>        <span class="hljs-comment">//（可选）如果广告单元加载失败，执行代码（例如再次尝试）。</span><br>        Debug.Log(<span class="hljs-string">$&quot;Error Ads 加载广告失败 Unit: <span class="hljs-subst">&#123;_adUnitId&#125;</span> - <span class="hljs-subst">&#123;error.ToString()&#125;</span> - <span class="hljs-subst">&#123;message&#125;</span>&quot;</span>);<br>    &#125;<br>    <br>    <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;summary&gt;</span></span><br>    <span class="hljs-comment"><span class="hljs-doctag">///</span> 加载Banner</span><br>    <span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/summary&gt;</span></span><br>    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">LoadBanner</span>()</span><br>    &#123;<br>        <span class="hljs-keyword">if</span> (_adBannerLoaded) <span class="hljs-keyword">return</span>;<br>        <span class="hljs-comment">// Set up options to notify the SDK of load events:</span><br>        BannerLoadOptions options = <span class="hljs-keyword">new</span> BannerLoadOptions<br>        &#123;<br>            loadCallback = OnBannerLoaded,<br>            errorCallback = OnBannerError<br>        &#125;;<br> <br>        <span class="hljs-comment">// Load the Ad Unit with banner content:</span><br>        Advertisement.Banner.Load(BannerPlacementId, options);<br>    &#125;<br> <br>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">OnBannerLoaded</span>()</span><br>    &#123;<br>        _adBannerLoaded = <span class="hljs-literal">true</span>;<br>        Debug.Log(<span class="hljs-string">&quot;Banner Ads 加载完成&quot;</span>);  <br>    &#125;<br>    <br>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">OnBannerError</span>(<span class="hljs-params"><span class="hljs-built_in">string</span> message</span>)</span><br>    &#123;<br>        _adBannerLoaded = <span class="hljs-literal">false</span>;<br>        Debug.Log(<span class="hljs-string">$&quot;Banner Ads 加载失败 Error: <span class="hljs-subst">&#123;message&#125;</span>&quot;</span>);<br>        <span class="hljs-comment">// 可选地执行附加代码，例如尝试加载另一个广告。</span><br>    &#125;<br><br>    <span class="hljs-meta">#<span class="hljs-keyword">endregion</span> </span><br>    <br>    <span class="hljs-meta">#<span class="hljs-keyword">region</span> 显示</span><br>    <br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">OnUnityAdsShowFailure</span>(<span class="hljs-params"><span class="hljs-built_in">string</span> adUnitId, UnityAdsShowError error, <span class="hljs-built_in">string</span> message</span>)</span><br>    &#123;<br>        <span class="hljs-comment">//如果广告单元展示失败，执行代码（例如加载另一个广告）。</span><br>        Debug.Log(<span class="hljs-string">$&quot;Error Ads 展示广告失败 Unit <span class="hljs-subst">&#123;adUnitId&#125;</span>: <span class="hljs-subst">&#123;error.ToString()&#125;</span> - <span class="hljs-subst">&#123;message&#125;</span>&quot;</span>);<br>    &#125;<br><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">OnUnityAdsShowStart</span>(<span class="hljs-params"><span class="hljs-built_in">string</span> adUnitId</span>)</span><br>    &#123;<br>        <span class="hljs-comment">//广告开始 可执行操作</span><br>    &#125;<br><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">OnUnityAdsShowClick</span>(<span class="hljs-params"><span class="hljs-built_in">string</span> adUnitId</span>)</span><br>    &#123;<br>        <span class="hljs-comment">//广告被点击时</span><br>    &#125;<br><br>    <span class="hljs-comment">// 广告显示完成后发放奖励：</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">OnUnityAdsShowComplete</span>(<span class="hljs-params"><span class="hljs-built_in">string</span> adUnitId, UnityAdsShowCompletionState showCompletionState</span>)</span><br>    &#123;<br>        <span class="hljs-keyword">if</span> (adUnitId.Equals(rewardPlacementID) &amp;&amp; showCompletionState.Equals(UnityAdsShowCompletionState.COMPLETED))<br>        &#123;<br>            Debug.Log(<span class="hljs-string">&quot;Unity Ads 奖励广告播放完成&quot;</span>);<br>            <span class="hljs-comment">// 发放奖励</span><br>            <br>        &#125;<br>       <br>    &#125;<br>    <br>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">OnBannerClicked</span>()</span> &#123; &#125;<br><br>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">OnBannerShown</span>()</span><br>    &#123;<br>        Debug.Log(<span class="hljs-string">&quot;Banner 显示&quot;</span>);<br>    &#125;<br><br>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">OnBannerHidden</span>()</span><br>    &#123;<br>        LoadBanner();<br>    &#125;<br><br>    <span class="hljs-meta">#<span class="hljs-keyword">endregion</span></span><br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p><a target="_blank" rel="noopener" href="https://docs.unity.com/ads/zh-cn/manual/UnityAdsHome">Untiy Ads  文档</a></p>
+<p><a target="_blank" rel="noopener" href="https://cloud.unity.com/">Unity Cloud</a></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Unity/" class="category-chain-item">Unity</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Unity/" class="print-no-link">#Unity</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Untiy Import the SDK　</div>
+      <div>http://gavingroves.github.io/2023/11/22/Untiy-Import-the-SDK/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>Gavin Groves</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>November 22, 2023</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              BY-DOUG
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/11/22/Untiy-Plugins/" title="Untiy Plugins">
+                        <span class="hidden-mobile">Untiy Plugins</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"cZ0by4kCn1BSG2yui8kpjemg-gzGzoHsz","appKey":"6Bla8avQDfzVMknB8f1yj0On","path":"window.location.pathname","placeholder":"啊","avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    
+
+<div class="footer-inner">
+<div>
+  <span id="timeDate">载入天数...</span>
+  <span id="times">载入时分秒...</span>
+  <script>
+  var now = new Date();
+  function createtime(){
+      var grt= new Date("10/24/2023 00:00:00");//此处修改你的建站时间或者网站上线时间
+      now.setTime(now.getTime()+250);
+      days = (now - grt ) / 1000 / 60 / 60 / 24;
+      dnum = Math.floor(days);
+      hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
+      hnum = Math.floor(hours);
+      if(String(hnum).length ==1 ){
+          hnum = "0" + hnum;
+      }
+      minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+      mnum = Math.floor(minutes);
+      if(String(mnum).length ==1 ){
+                mnum = "0" + mnum;
+      }
+      seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+      snum = Math.round(seconds);
+      if(String(snum).length ==1 ){
+                snum = "0" + snum;
+      }
+      document.getElementById("timeDate").innerHTML = "🚀 for&nbsp"+dnum+"&nbspdays";  //此次自定义显示内容
+      document.getElementById("times").innerHTML = hnum + "&nbsphr&nbsp" + mnum + "&nbspmin&nbsp" + snum + "&nbspsec";
+  }  //此次自定义显示内容
+  setInterval("createtime()",250);
+  </script>
+</div>
+<div class=""center text-center py-1">   
+  <div>
+    <span>Copyright © 2023</span></a>
+    <a href="https://erenspace.cool/" target="_blank" rel="nofollow noopener">
+     <span>Orion</span></a>    <br>
+  </div>
+</div>
+</div>
+
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>
