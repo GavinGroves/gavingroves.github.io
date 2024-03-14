@@ -20,42 +20,6 @@
   </url>
   
   <url>
-    <loc>http://gavingroves.github.io/2023/11/22/Game-Cyberpunk/</loc>
-    
-    <lastmod>2024-03-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://gavingroves.github.io/2023/11/24/Game-experience/</loc>
-    
-    <lastmod>2024-03-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://gavingroves.github.io/2023/11/24/Game-Conception/</loc>
-    
-    <lastmod>2024-03-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://gavingroves.github.io/2023/11/22/Untiy-Plugins/</loc>
-    
-    <lastmod>2023-11-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://gavingroves.github.io/2023/11/21/Link-Learning/</loc>
     
     <lastmod>2023-11-23</lastmod>
@@ -68,24 +32,6 @@
     <loc>http://gavingroves.github.io/2023/11/20/Link-Collect/</loc>
     
     <lastmod>2023-11-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://gavingroves.github.io/2023/11/22/Untiy-Import-the-SDK/</loc>
-    
-    <lastmod>2023-11-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://gavingroves.github.io/2023/11/10/Unity-Tip/</loc>
-    
-    <lastmod>2023-11-21</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -128,20 +74,6 @@
 
   
   <url>
-    <loc>http://gavingroves.github.io/tags/Game/</loc>
-    <lastmod>2024-03-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://gavingroves.github.io/tags/Cyberpunk/</loc>
-    <lastmod>2024-03-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://gavingroves.github.io/tags/Link/</loc>
     <lastmod>2024-03-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -163,13 +95,6 @@
   </url>
   
 
-  
-  <url>
-    <loc>http://gavingroves.github.io/categories/Game/</loc>
-    <lastmod>2024-03-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>http://gavingroves.github.io/categories/Link/</loc>
