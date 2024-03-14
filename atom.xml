@@ -3,14 +3,14 @@
   <title>Orion</title>
   
   
-  <link href="http://gavingroves.github.io/atom.xml" rel="self"/>
+  <link href="http://knellwake.github.io/atom.xml" rel="self"/>
   
-  <link href="http://gavingroves.github.io/"/>
+  <link href="http://knellwake.github.io/"/>
   <updated>2023-11-23T17:22:26.667Z</updated>
-  <id>http://gavingroves.github.io/</id>
+  <id>http://knellwake.github.io/</id>
   
   <author>
-    <name>Gavin Groves</name>
+    <name>Doug Wake</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Learning Link Collect</title>
-    <link href="http://gavingroves.github.io/2023/11/21/Link-Learning/"/>
-    <id>http://gavingroves.github.io/2023/11/21/Link-Learning/</id>
+    <link href="http://knellwake.github.io/2023/11/21/Link-Learning/"/>
+    <id>http://knellwake.github.io/2023/11/21/Link-Learning/</id>
     <published>2023-11-21T15:56:59.000Z</published>
     <updated>2023-11-23T17:22:26.667Z</updated>
     
@@ -33,19 +33,19 @@
     
     
     
-    <category term="Link" scheme="http://gavingroves.github.io/categories/Link/"/>
+    <category term="Link" scheme="http://knellwake.github.io/categories/Link/"/>
     
     
-    <category term="Link" scheme="http://gavingroves.github.io/tags/Link/"/>
+    <category term="Link" scheme="http://knellwake.github.io/tags/Link/"/>
     
-    <category term="Unity" scheme="http://gavingroves.github.io/tags/Unity/"/>
+    <category term="Unity" scheme="http://knellwake.github.io/tags/Unity/"/>
     
   </entry>
   
   <entry>
     <title>Unity Demo Collection</title>
-    <link href="http://gavingroves.github.io/2023/11/20/Unity-Demo-Collection/"/>
-    <id>http://gavingroves.github.io/2023/11/20/Unity-Demo-Collection/</id>
+    <link href="http://knellwake.github.io/2023/11/20/Unity-Demo-Collection/"/>
+    <id>http://knellwake.github.io/2023/11/20/Unity-Demo-Collection/</id>
     <published>2023-11-20T06:56:30.000Z</published>
     <updated>2024-03-14T07:26:00.110Z</updated>
     
@@ -59,19 +59,19 @@
     
     
     
-    <category term="Unity" scheme="http://gavingroves.github.io/categories/Unity/"/>
+    <category term="Unity" scheme="http://knellwake.github.io/categories/Unity/"/>
     
     
-    <category term="Unity" scheme="http://gavingroves.github.io/tags/Unity/"/>
+    <category term="Unity" scheme="http://knellwake.github.io/tags/Unity/"/>
     
-    <category term="Demo" scheme="http://gavingroves.github.io/tags/Demo/"/>
+    <category term="Demo" scheme="http://knellwake.github.io/tags/Demo/"/>
     
   </entry>
   
   <entry>
     <title>Defy Full Description In Writing</title>
-    <link href="http://gavingroves.github.io/2023/11/20/Link-Collect/"/>
-    <id>http://gavingroves.github.io/2023/11/20/Link-Collect/</id>
+    <link href="http://knellwake.github.io/2023/11/20/Link-Collect/"/>
+    <id>http://knellwake.github.io/2023/11/20/Link-Collect/</id>
     <published>2023-11-20T06:44:22.000Z</published>
     <updated>2023-11-23T17:21:41.539Z</updated>
     
@@ -82,17 +82,17 @@
     
     
     
-    <category term="Link" scheme="http://gavingroves.github.io/categories/Link/"/>
+    <category term="Link" scheme="http://knellwake.github.io/categories/Link/"/>
     
     
-    <category term="Link" scheme="http://gavingroves.github.io/tags/Link/"/>
+    <category term="Link" scheme="http://knellwake.github.io/tags/Link/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://gavingroves.github.io/2023/11/10/hello-world/"/>
-    <id>http://gavingroves.github.io/2023/11/10/hello-world/</id>
+    <link href="http://knellwake.github.io/2023/11/10/hello-world/"/>
+    <id>http://knellwake.github.io/2023/11/10/hello-world/</id>
     <published>2023-11-10T07:20:40.161Z</published>
     <updated>2024-03-14T07:30:16.427Z</updated>
     
