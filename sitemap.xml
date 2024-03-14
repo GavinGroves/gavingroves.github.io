@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://knellwake.github.io/about/index.html</loc>
+    
+    <lastmod>2024-03-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://knellwake.github.io/2023/11/10/hello-world/</loc>
     
     <lastmod>2024-03-14</lastmod>
@@ -32,15 +41,6 @@
     <loc>http://knellwake.github.io/2023/11/20/Link-Collect/</loc>
     
     <lastmod>2023-11-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://knellwake.github.io/about/index.html</loc>
-    
-    <lastmod>2023-11-21</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
